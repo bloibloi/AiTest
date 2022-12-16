@@ -1,0 +1,13 @@
+function randomAnswer() {
+
+  const answers = getAnswers();
+  
+
+  const selectedAnswer = answers[Math.floor(Math.random() * answers.length)];
+  
+
+  submitAnswer(selectedAnswer);
+}
+
+
+randomAnswer();
