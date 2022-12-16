@@ -1,0 +1,13 @@
+function randomAnswer() {
+  // Get all available answers
+  const answers = getAnswers();
+  
+  // Select a random answer
+  const selectedAnswer = answers[Math.floor(Math.random() * answers.length)];
+  
+  // Submit the selected answer
+  submitAnswer(selectedAnswer);
+}
+
+// Run the function automatically when the bookmark is clicked
+randomAnswer();
